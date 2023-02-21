@@ -7,15 +7,25 @@
   scroll-behavior: smooth;
   font-size: 10px;
 }
-
-@font-face {
-  font-family: "FF Shamel Family";
-  src: url(../assets/fonts/FFShamelFamily-SansOneBold.ttf)
-    url(../assets/fonts/FF\ Shamel\ Family\ Sans\ One\ Book.ttf);
-  font-weight: normal;
-  font-style: normal;
+a {
+  text-decoration: none;
+  color: white;
 }
 
+@font-face {
+  font-family: "FFShamelFamily";
+  src: url(../assets/fonts/FFShamelFamilySansOneBook.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FFShamelFamily";
+  src: url(../assets/fonts/FFShamelFamily-SansOneBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+$font-family-base: "FFShamelFamily";
+
 body {
-  font-family: "FF Shamel Family", sans-serif;
+  font-family: "FFShamelFamily";
 }
