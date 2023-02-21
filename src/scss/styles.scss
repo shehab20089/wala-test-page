@@ -1,2 +1,11 @@
+// global and bootstrap themes and variables
+@import "./variables";
+@import "./bootstrap-theme.scss";
+
+// importing bootstrap
 @import "~bootstrap/scss/bootstrap";
-@import './root.scss'
+
+// importing page components styles
+@import "./root.scss";
+@import "./header.style.scss";
+@import "./button.style.scss";
