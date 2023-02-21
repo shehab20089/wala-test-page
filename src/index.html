@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Walaplus</title>
     <script type="module" src="./js/main.js" defer></script>
   </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Wala Plus</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
+  <body dir="rtl">
+    <!-- ------------------------------------------------ -->
+    <!-- Header Area -->
+    <!-- ------------------------------------------------ -->
+
+    <header>
+      <nav>
+        <div class="nav-right">
+          <div class="logo-container">
+            <img src="assets/icons/Walalogo.svg" alt="" srcset="" />
+          </div>
+          <a class="nav-link" aria-current="page" href="#">الرئـيسية</a>
+          <a class="nav-link" href="#">عن ولاء بلس</a>
+          <div class="dropdown-nav-item">
+            <a
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >بــرامــجنا
+
+              <span class="icon"
+                ><img src="assets/icons/ArrowDown.svg" alt="" srcset="" /></span
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1 برنامج</a></li>
+              <li><a class="dropdown-item" href="#">برنامج 2</a></li>
+            </ul>
+          </div>
+          <div class="dropdown-nav-item">
+            <a
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >مركز المساعدة
+
+              <span class="icon"
+                ><img src="assets/icons/ArrowDown.svg" alt="" srcset="" /></span
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1 مركز</a></li>
+              <li><a class="dropdown-item" href="#">مركز 2</a></li>
+            </ul>
+          </div>
+          <a class="nav-link" href="#">المدونة</a>
+          <a class="nav-link" href="#">اتصل بنا</a>
+        </div>
+        <div class="nav-left">
+          <div class="lang-switcher">
+            <p>EN</p>
+            <span><img src="assets/icons/flagIcon.svg" alt="" /></span>
+          </div>
+          <div class="vertical-divider">|</div>
+          <div class="action-container">
+            <button type="button" class="btn btn-secondary button-info">
+              اطلب عرض تجريبي
+            </button>
+            <button type="button" class="btn btn-secondary text-primary">
+              الدخــول
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
