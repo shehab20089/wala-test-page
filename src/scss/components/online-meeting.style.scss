@@ -1,7 +1,16 @@
 .online-meetings {
   padding-block: 7.2rem;
-  padding-inline-start: $main-content-padding;
   position: relative;
+
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    padding-inline: 1rem;
+  }
+  @media screen and (min-width: 500px) {
+    padding-inline: $main-content-padding-tablet;
+  }
+  @media screen and (min-width: 900px) {
+    padding-inline: $main-content-padding;
+  }
   .meeting-list {
     display: flex;
     flex-wrap: nowrap;
@@ -35,7 +44,6 @@
     padding-inline: 3.3rem;
     padding-block: 4rem;
     border-radius: 20px;
-    max-width: 544px;
     background-image: url(../../assets/icons/inactive-meet.svg);
     background-repeat: no-repeat;
     background-position: 0 bottom;
@@ -117,7 +125,23 @@
         height: 80px;
       }
     }
-
+    @media screen and (max-width: 400px) {
+      max-width: 98%;
+      .start {
+        .meeting-desc {
+          h3 {
+            font-size: 3rem;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 400px) {
+      max-width: 400px;
+    }
+    @media screen and (min-width: 1500px) {
+      max-width: 544px;
+    }
     // Active meeting  card
     &.active-meeting {
       background-color: $clr-primary;
