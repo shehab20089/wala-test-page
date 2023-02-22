@@ -15,10 +15,15 @@
       <!-- ----------- -->
       <!-- Nav Area -->
       <!-- ----------- -->
-      <nav>
-        <div class="nav-right">
+      <nav class="navbar bg-body-tertiary">
+        <div class="nav-right d-none d-xl-flex">
           <div class="logo-container">
-            <img src="assets/icons/Walalogo.svg" alt="" srcset="" />
+            <img
+              class="img-fluid"
+              src="assets/icons/Walalogo.svg"
+              alt=""
+              srcset=""
+            />
           </div>
           <a class="nav-link" aria-current="page" href="#">الرئـيسية</a>
           <a class="nav-link" href="#">عن ولاء بلس</a>
@@ -59,7 +64,7 @@
           <a class="nav-link" href="#">المدونة</a>
           <a class="nav-link" href="#">اتصل بنا</a>
         </div>
-        <div class="nav-left">
+        <div class="nav-left d-none d-xl-flex">
           <div class="lang-switcher">
             <p>EN</p>
             <span><img src="assets/icons/flagIcon.svg" alt="" /></span>
@@ -73,6 +78,74 @@
               الدخــول
             </button>
           </div>
+        </div>
+        <!-- ----------- -->
+        <!-- Mobile View -->
+        <!-- ----------- -->
+
+        <div class="logo-container d-xl-none">
+          <img
+            class="img-fluid"
+            src="assets/icons/Walalogo.svg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <button
+          class="d-xl-none d-sm-block menu-icon"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class=""
+            ><img src="assets/icons/icons8-menu-rounded-50.png" alt=""
+          /></span>
+        </button>
+        <div
+          class="nav-right collapse navbar-collapse d-xl-none"
+          id="navbarTogglerDemo02"
+        >
+          <a class="nav-link" aria-current="page" href="#">الرئـيسية</a>
+          <a class="nav-link" href="#">عن ولاء بلس</a>
+          <div class="dropdown-nav-item">
+            <a
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >بــرامــجنا
+
+              <span class="icon"
+                ><img src="assets/icons/ArrowDown.svg" alt="" srcset="" /></span
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1 برنامج</a></li>
+              <li><a class="dropdown-item" href="#">برنامج 2</a></li>
+            </ul>
+          </div>
+          <div class="dropdown-nav-item">
+            <a
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >مركز المساعدة
+
+              <span class="icon"
+                ><img src="assets/icons/ArrowDown.svg" alt="" srcset="" /></span
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1 مركز</a></li>
+              <li><a class="dropdown-item" href="#">مركز 2</a></li>
+            </ul>
+          </div>
+          <a class="nav-link" href="#">المدونة</a>
+          <a class="nav-link" href="#">اتصل بنا</a>
         </div>
       </nav>
       <!-- ----------- -->
@@ -433,6 +506,9 @@
         </div>
       </section>
     </main>
+    <!-- ------------------------------------------------ -->
+    <!-- Footer Area -->
+    <!-- ------------------------------------------------ -->
     <footer>
       <div class="upper-footer">
         <div class="logo-container">

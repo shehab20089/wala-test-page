@@ -4,9 +4,18 @@ header {
   background-repeat: no-repeat;
   background-position: 0px 100%;
   background-size: contain;
-  padding-inline: 12rem;
   padding-block: 6rem;
   padding-block-end: 8rem;
+
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    padding-inline: 3rem;
+  }
+  @media screen and (min-width: 500px) {
+    padding-inline: 6rem;
+  }
+  @media screen and (min-width: 900px) {
+    padding-inline: 12rem;
+  }
 
   nav {
     gap: 2.5rem;
@@ -35,6 +44,13 @@ header {
           transform: translateY(-5px);
         }
       }
+
+      @media screen and (min-width: 320px) and (max-width: 1199px) {
+        flex-direction: column;
+        .nav-link {
+          font-size: 2.5rem;
+        }
+      }
     }
     .nav-left {
       display: flex;
@@ -58,6 +74,17 @@ header {
       .action-container {
         display: flex;
         gap: 1.6rem;
+      }
+    }
+    .menu-icon {
+      background: none;
+      border: none;
+      flex-shrink: 0;
+    }
+    .logo-container {
+      max-width: 109px;
+      @media screen and (min-width: 320px) and (max-width: 1199px) {
+        max-width: 150px;
       }
     }
   }
