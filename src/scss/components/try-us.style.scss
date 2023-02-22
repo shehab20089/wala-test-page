@@ -1,7 +1,21 @@
 .try-us-section {
   margin-block-start: 31.5rem;
-  padding-inline: $main-content-padding;
-
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    padding-inline: $main-content-padding-mobile;
+    margin-block-start: 20rem;
+  }
+  @media screen and (min-width: 500px) {
+    padding-inline: $main-content-padding-tablet;
+    margin-block-start: 20rem;
+  }
+  @media screen and (min-width: 900px) {
+    padding-inline: $main-content-padding;
+    margin-block-start: 60rem;
+  }
+  @media screen and (min-width: 1500px) {
+    padding-inline: $main-content-padding;
+    margin-block-start: 45rem;
+  }
   .try-us-container {
     position: relative;
     background-color: $clr-primary;
@@ -31,6 +45,42 @@
       position: absolute;
       left: 9.1rem;
       bottom: 0;
+    }
+    @media screen and (min-width: 320px) and (max-width: 800px) {
+      padding-inline: 4.2rem;
+
+      padding-block-end: 0;
+      .try-us-avatar {
+        position: static;
+        margin-block-start: 5rem;
+      }
+    }
+    @media screen and (min-width: 800px) and (max-width: 1056px) {
+      .try-us-desc {
+        max-width: 400px;
+      }
+      .try-us-avatar {
+        width: 300px;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    @media screen and (min-width: 1056px) and (max-width: 1400px) {
+      .try-us-desc {
+        max-width: 500px;
+      }
+      .try-us-avatar {
+        width: 400px;
+        left: 0rem;
+
+        bottom: 0;
+      }
+    }
+    @media screen and (min-width: 1400px) {
+      .try-us-avatar {
+        width: 600px;
+        bottom: 0;
+      }
     }
   }
 }
