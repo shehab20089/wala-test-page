@@ -1,0 +1,36 @@
+.try-us-section {
+  margin-block-start: 31.5rem;
+  padding-inline: $main-content-padding;
+
+  .try-us-container {
+    position: relative;
+    background-color: $clr-primary;
+    padding-block: 8.4rem;
+    padding-inline: 9.2rem;
+    border-radius: 20px;
+
+    .try-us-desc {
+      max-width: 714px;
+      font-weight: 700;
+
+      .try-us-text {
+        margin-block-end: 5.6rem;
+
+        h2 {
+          margin-block-end: 1.2rem;
+          color: white;
+          font-weight: 700;
+        }
+        p {
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    .try-us-avatar {
+      position: absolute;
+      left: 9.1rem;
+      bottom: 0;
+    }
+  }
+}
