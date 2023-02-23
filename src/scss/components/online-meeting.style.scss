@@ -9,7 +9,8 @@
     padding-inline: $main-content-padding-tablet;
   }
   @media screen and (min-width: 900px) {
-    padding-inline: $main-content-padding;
+    padding-inline-start: $main-content-padding;
+    padding-inline-end: 0;
   }
   .meeting-list {
     display: flex;
