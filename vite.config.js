@@ -5,8 +5,8 @@ export default {
   root: path.resolve(__dirname, "src"),
 
   build: {
-    outDir: "dist",
-
+    outDir: "../dist",
+    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: new URL("./src/index.html", import.meta.url).pathname,
