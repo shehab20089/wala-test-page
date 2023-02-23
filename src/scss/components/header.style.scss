@@ -6,9 +6,17 @@ header {
   background-size: contain;
   padding-block: 6rem;
   padding-block-end: 8rem;
+  &.callback-header {
+    background-size: 100% 100%;
 
+    background-image: url(../../assets/backgrounds/call-us-header.svg);
+    padding-block-end: 14rem;
+  }
   @media screen and (min-width: 320px) and (max-width: 500px) {
     padding-inline: 3rem;
+    &.callback-header {
+      background-image: none;
+    }
   }
   @media screen and (min-width: 500px) {
     padding-inline: 6rem;
