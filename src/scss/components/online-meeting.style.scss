@@ -45,7 +45,7 @@
     padding-inline: 3.3rem;
     padding-block: 4rem;
     border-radius: 20px;
-    background-image: url(../../assets/icons/inactive-meet.svg);
+    background-image: url(/backgrounds/inactive-meet.svg);
     background-repeat: no-repeat;
     background-position: 0 bottom;
 
@@ -147,7 +147,7 @@
     &.active-meeting {
       background-color: $clr-primary;
       color: white;
-      background-image: url(../../assets/icons/active-icon.svg);
+      background-image: url(/backgrounds/active-icon.svg);
       .meeting-speaker {
         .speaker-name {
           span {

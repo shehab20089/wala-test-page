@@ -1,6 +1,6 @@
 header {
   background-color: $clr-primary;
-  background-image: url(../../assets/backgrounds/header-background.svg);
+  background-image: url(/backgrounds/header-background.svg);
   background-repeat: no-repeat;
   background-position: 0px 100%;
   background-size: contain;
@@ -9,7 +9,7 @@ header {
   &.callback-header {
     background-size: 100% 100%;
 
-    background-image: url(../../assets/backgrounds/call-us-header.svg);
+    background-image: url(/backgrounds/call-us-header.svg);
     padding-block-end: 14rem;
   }
   @media screen and (min-width: 320px) and (max-width: 500px) {
