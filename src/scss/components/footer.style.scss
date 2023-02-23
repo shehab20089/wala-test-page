@@ -1,14 +1,33 @@
 footer {
   margin-block-start: 7.2rem;
-  padding-inline: $main-content-padding;
   padding-block: 8.8rem;
   background-color: $clr-secondary;
+
+  @media screen and (min-width: 320px) {
+    padding-inline: $main-content-padding-mobile;
+  }
+  @media screen and (min-width: 500px) {
+    padding-inline: $main-content-padding-tablet;
+  }
+  @media screen and (min-width: 900px) {
+    padding-inline: $main-content-padding;
+  }
 
   .upper-footer {
     display: flex;
     gap: 11.7rem;
+    @media screen and (min-width: 320px) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+    @media screen and (min-width: 1400px) {
+      flex-direction: row;
+    }
     .logo-container {
       max-width: 414px;
+      @media screen and (max-width: 500px) {
+        max-width: 200px;
+      }
       p {
         margin-block-start: 3.7rem;
         font-size: 1.6rem;
@@ -36,6 +55,42 @@ footer {
             &:hover {
               color: $clr-primary;
             }
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 320px) {
+        ul {
+          li {
+            a {
+              span {
+                max-width: 12px;
+              }
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 500px) {
+        ul {
+          li {
+            a {
+              span {
+                max-width: 18px;
+              }
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        ul {
+          li {
+            a {
+              span {
+                max-width: 25px;
+              }
+            }
           }
         }
       }
@@ -62,10 +117,12 @@ footer {
         height: 12px;
         background-color: $clr-primary;
         border-radius: 50%;
+        flex-shrink: 0;
       }
       .links {
         display: flex;
         gap: 1.6rem;
+        align-items: center;
         font-size: 1.8rem;
         color: #00000099;
         cursor: pointer;
@@ -74,6 +131,15 @@ footer {
     .social-container {
       display: flex;
       gap: 1.6rem;
+    }
+    @media screen and (min-width: 320px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+    }
+    @media screen and (min-width: 750px) {
+      flex-direction: row;
     }
   }
 }
