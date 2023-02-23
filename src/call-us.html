@@ -180,11 +180,12 @@
           <div class="call-form">
             <form class="wala-form">
               <div class="form-item">
-                <div class="label">الأسم</div>
+                <div class="label"><label for="first_name">الأسم</label></div>
                 <div class="form-inputs">
                   <input
                     type="text"
                     name="first_name"
+                    id="first_name"
                     placeholder="الاسم الاول"
                   />
                   <input
@@ -196,7 +197,9 @@
               </div>
               <div class="form-group">
                 <div class="form-item">
-                  <div class="label">رقم الهاتف</div>
+                  <div class="label">
+                    <label for="phone_number">رقم الهاتف</label>
+                  </div>
                   <div class="form-inputs phone" dir="ltr">
                     <div class="phone-placeholder">
                       <span
@@ -206,26 +209,36 @@
                       /></span>
                       +966
                     </div>
-                    <input type="tel" name="message_title" />
+                    <input type="tel" id="phone_number" name="message_title" />
                   </div>
                 </div>
                 <div class="form-item">
-                  <div class="label">البريد الالكتروني</div>
+                  <div class="label">
+                    <label for="email">البريد الالكتروني</label>
+                  </div>
                   <div class="form-inputs">
-                    <input type="tel" dir="ltr" name="message_title" />
+                    <input type="email" dir="ltr" name="email" id="email" />
                   </div>
                 </div>
               </div>
               <div class="form-item">
-                <div class="label">عنوان رسالتك</div>
+                <div class="label">
+                  <label for="message_title">عنوان رسالتك</label>
+                </div>
                 <div class="form-inputs">
-                  <input type="text" name="message_title" />
+                  <input type="text" name="message_title" id="message_title" />
                 </div>
               </div>
               <div class="form-item">
-                <div class="label">رسالتك هنا</div>
+                <div class="label">
+                  <label for="message_body">رسالتك هنا</label>
+                </div>
                 <div class="form-inputs">
-                  <textarea rows="7"></textarea>
+                  <textarea
+                    rows="7"
+                    name="message_body"
+                    id="message_body"
+                  ></textarea>
                 </div>
               </div>
               <button
