@@ -13,22 +13,37 @@ header {
     padding-block-end: 14rem;
   }
   @media screen and (min-width: 320px) and (max-width: 500px) {
-    padding-inline: 3rem;
     &.callback-header {
       background-image: none;
     }
-  }
-  @media screen and (min-width: 500px) {
-    padding-inline: 6rem;
-  }
-  @media screen and (min-width: 900px) {
-    padding-inline: 12rem;
   }
 
   nav {
     gap: 2.5rem;
     display: flex;
     justify-content: space-between;
+
+    &.navbar:not(.fixed-top) {
+      padding-block: none;
+    }
+    &.navbar.fixed-top {
+      padding-block: 2.2rem;
+    }
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+      &.navbar {
+        padding-inline: 3rem;
+      }
+    }
+    @media screen and (min-width: 500px) {
+      &.navbar {
+        padding-inline: 6rem;
+      }
+    }
+    @media screen and (min-width: 900px) {
+      &.navbar {
+        padding-inline: 12rem;
+      }
+    }
     .nav-right {
       display: flex;
       align-items: center;
@@ -101,6 +116,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+      padding-inline: 3rem;
+    }
+    @media screen and (min-width: 500px) {
+      padding-inline: 6rem;
+    }
+    @media screen and (min-width: 900px) {
+      padding-inline: 12rem;
+    }
     .intro-text {
       color: $clr-secondary;
       text-align: center;
